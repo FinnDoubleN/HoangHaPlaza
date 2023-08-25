@@ -76,8 +76,8 @@ ArrayList<Category> category = new ArrayList<Category>();
         request.setAttribute("account", account);
         int cateID = Integer.parseInt(request.getParameter("cateID"));
         String cateName = request.getParameter("cateName");
-        HHPlazaDAO.UpdateProduct(cateID, cateName);
-        category = HHPlazaDAO.getAllCategory();
+//        HHPlazaDAO.UpdateProduct(cateID, cateName);
+//        category = HHPlazaDAO.getAllCategory();
         request.setAttribute("category", category);
         request.getRequestDispatcher("CategoryManagement.jsp").forward(request, response);
     

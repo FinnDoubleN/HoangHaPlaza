@@ -442,19 +442,19 @@ public class HHPlazaDAO {
         return pst.executeUpdate();
     }
     
-    public static int UpdateUser(int cid, String username, String password, String cname, String cphone, String cAddresss, String status) throws SQLException {
-        Connection conn = DBContext.getConnection();
-        String sql = "update Customer set username = ?, password = ?, cname = ?, cphone = ?, cAddress = ?, status = ? where cid = ?";
-        PreparedStatement pst = conn.prepareStatement(sql);
-        pst.setString(1, username);
-        pst.setString(2, password);
-        pst.setString(3, cname);
-        pst.setString(4, cphone);
-        pst.setString(5, cAddresss);
-        pst.setString(6, status);
-        pst.setInt(7, cid);
-        return pst.executeUpdate();
-    }
+//    public static int UpdateUser(int cid, String username, String password, String cname, String cphone, String cAddresss, String status) throws SQLException {
+//        Connection conn = DBContext.getConnection();
+//        String sql = "update Customer set username = ?, password = ?, cname = ?, cphone = ?, cAddress = ?, status = ? where cid = ?";
+//        PreparedStatement pst = conn.prepareStatement(sql);
+//        pst.setString(1, username);
+//        pst.setString(2, password);
+//        pst.setString(3, cname);
+//        pst.setString(4, cphone);
+//        pst.setString(5, cAddresss);
+//        pst.setString(6, status);
+//        pst.setInt(7, cid);
+//        return pst.executeUpdate();
+//    }
     
 //    public static int UpdateSess(int cid, int oID, String productID, String productName, String productColor, String productPath, double productPrice, int productQuantity, int itemQuantity, String sess) throws SQLException {
 //        Connection conn = DBContext.getConnection();
